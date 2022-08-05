@@ -3,7 +3,7 @@ Programa: Led Blink
 
 Proposito: Verificar funcionamento de placa ESP32
 
-Programador: Facundo Cosentino, Sergio Zelaya
+Programadores: Facundo Cosentino, Sergio Zelaya
 Fecha: 26/07/2022
 '''
 from machine import Pin       #Importamos Pin de machine
