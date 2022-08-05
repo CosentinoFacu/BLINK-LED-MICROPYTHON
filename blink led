@@ -1,0 +1,20 @@
+'''
+Programa: Led Blink
+
+Proposito: Verificar funcionamento de placa ESP32
+
+Programador: Facundo Cosentino, Sergio Zelaya
+Fecha: 26/07/2022
+'''
+from machine import Pin       #Importamos Pin de machine
+import time                   #Importamos time
+
+led=Pin(23,Pin.OUT)           #Declaramos Pin 23 como salida y de nombre "led"
+
+print("Programa en marcha")   #Mensaje de puesta en marcha
+time.sleep(2)                 #Esperamos 2 seg
+
+while True:                  
+    led.value(not led.value())        #Cambiamos el valor actual de "led"
+    print("Funcionando","Variable led.value() con valor",led.value(),"y de tipo",type(led.value())) #mensaje de impresion
+    time.sleep(1)                     # Esperamos 1 seg
